@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mondrian Project</title>
+  <style>
+    /* 
+    Write your CSS here 
+    Gap Colour: #000
+    White: #F0F1EC
+    Red: #E72F24
+    Black: #232629
+    Blue: #004592
+    Yellow: #F9D01E
+
+    For dimensions, see dimensions.png image.
+    HINT: Remember you can't change the properties of grid lines.
+    But grid lines are transparent!
+    */
+    body{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 0;
+      margin: 0;
+      height: 100vh;
+    }
+    .container{
+      height: 748px;
+      width: 748px;
+      background-color: #000;
+      display: grid;
+      grid-template-rows: 414px 130px 155px 20px;
+      grid-template-columns: 320px 198px 153px 50px;
+      gap: 9px;
+    }
+
+    #s1{
+      background-color: #E72F24;
+    }
+
+    #s2{
+      background-color: #F0F1EC;
+      grid-column: 2/5;
+    }
+
+    #s3{
+      background-color: #F0F1EC;
+      grid-area: 2/1/4/2;
+    }
+
+    #s4{
+      background-color: #F0F1EC;
+      grid-area: 2/2/4/4;
+    }
+
+    #s5{
+      background-color: #004592;
+      grid-area: 2/4/3/5;
+      border-bottom: 10px solid #000;
+    }
+
+    #s6{
+      background-color: #F0F1EC;
+      grid-area: 4/1/5/2;
+      padding-bottom: 2px;
+    }
+
+    #s7{
+      background-color: #F9D01E;
+      grid-area: 4/2/5/3;
+      padding-bottom: 5px;
+    }
+
+    #s8{
+      background-color: #232629;
+      grid-area: 4/3/5/4;
+      padding-bottom: 5px;
+    }
+
+    #s9{
+      background-color: #F0F1EC;
+      grid-area: 3/4/5/5;
+      padding-bottom: 5px;
+    }
+
+  </style>
+</head>
+
+<body>
+  <!-- Write your HTML here -->
+   <div class="container">
+    <div id="s1"></div>
+    <div id="s2"></div>
+    <div id="s3"></div>
+    <div id="s4"></div>
+    <div id="s5"></div>
+    <div id="s6"></div>
+    <div id="s7"></div>
+    <div id="s8"></div>
+    <div id="s9"></div>
+   </div>
+</body>
+
+</html>
